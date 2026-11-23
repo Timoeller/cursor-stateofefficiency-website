@@ -199,6 +199,7 @@ async function main() {
   await fs.copyFile(path.join(src, 'styles.css'), path.join(dist, 'assets', 'styles.css'));
   await fs.copyFile(path.join(src, 'main.js'), path.join(dist, 'assets', 'main.js'));
   await write(path.join(dist, '.nojekyll'), '');
+  if (site.domain) await write(path.join(dist, 'CNAME'), `${site.domain}\n`);
 
   for (const lang of site.languages) {
     const otherLang = site.languages.find((l) => l !== lang);

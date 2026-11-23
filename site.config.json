@@ -1,6 +1,7 @@
 {
   "name": "State of Efficiency",
-  "baseUrl": "https://timoeller.github.io/cursor-stateofefficiency-website/",
+  "baseUrl": "https://stateofefficiency.de/",
+  "domain": "stateofefficiency.de",
   "languages": ["de", "en"],
   "defaultLanguage": "de",
   "hostLanguages": {

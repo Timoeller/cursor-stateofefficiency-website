@@ -45,13 +45,19 @@ The router at `/` picks a language in this order:
 
 The DE/EN switch in the header always works.
 
-## Using the custom domains later
+## Domains
 
-GitHub Pages serves one custom domain per site, and a custom domain needs DNS records at the registrar. Until then the host-based default does not apply, because the site is served from `github.io`. When you are ready:
+The site is served at `https://stateofefficiency.de/`. `site.config.json` holds the domain in `domain` (the build writes it to `dist/CNAME`, which sets the GitHub Pages custom domain) and the address in `baseUrl` (canonical and `hreflang` links).
 
-- Add the domain you want as the primary one under **Settings > Pages > Custom domain** and create the DNS records GitHub shows.
-- Set `baseUrl` in `site.config.json` (or the `SITE_URL` environment variable at build time) to the final address, so canonical and `hreflang` links are correct.
-- To serve the second domain, forward it to the primary one at the registrar or with a second Pages site built from this repository. Hosts ending in `.de` and `.com` then open the matching language automatically.
+GitHub Pages serves exactly one custom domain per site, so `stateofefficiency.de` is the primary domain and `stateofefficiency.com` redirects to the English pages. The DNS for both domains already points at GitHub Pages (apex A records to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`, `www` as a CNAME to `timoeller.github.io`).
+
+`stateofefficiency.de` needs nothing more at IONOS. After a deploy that contains the `CNAME` file, GitHub provisions the certificate and serves the domain. In **Settings > Pages**, tick **Enforce HTTPS** once the checkbox becomes available.
+
+`stateofefficiency.com` cannot be served by the same Pages site. In the IONOS control panel, set up domain forwarding for `stateofefficiency.com` (including `www`) as an HTTP redirect to `https://stateofefficiency.de/en/`. This replaces the domain's A records, which is intended. Visitors to the `.com` domain then land on the English site. Forwarding redirects the whole domain to that one address, so individual paths are not preserved; share links with the `.de` domain.
+
+When editing DNS, keep the existing records for both domains: the MX records (`mx00.ionos.de`, `mx01.ionos.de`) and the SPF TXT record. Email for `kontakt@stateofefficiency.de` and `contact@stateofefficiency.com` depends on them.
+
+Optionally, verify the domains on GitHub to prevent domain takeover: profile **Settings > Pages > Add a domain**, then add the TXT record GitHub shows (`_github-pages-challenge-timoeller.stateofefficiency.de`) alongside the existing SPF record.
 
 ## Legal texts
 
