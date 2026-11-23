@@ -1,0 +1,27 @@
+    <section class="page-hero" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">{{t.contact.eyebrow}}</p>
+          <h1 id="contact-title" class="display display--md">{{t.contact.title}}</h1>
+          <p class="lead">{{t.contact.text}}</p>
+
+          <div class="mail-card">
+            <p class="kicker">{{t.contact.mailLabel}}</p>
+            <a class="mail-link" id="mail-link" href="mailto:{{email}}">{{email}}</a>
+            <button class="btn btn--ghost btn--sm" type="button" id="copy-mail" data-email="{{email}}" data-copied="{{t.contact.copied}}">{{t.contact.copy}}</button>
+            <span class="sr-only" id="copy-status" role="status" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <form class="card form" id="contact-form" data-email="{{email}}" data-subject-default="{{t.contact.subjectDefault}}" data-subject-security="{{t.contact.subjectSecurity}}" data-message-security="{{t.contact.messageSecurity}}" data-greeting="{{t.contact.greeting}}" data-label-name="{{t.contact.labels.name}}" data-label-org="{{t.contact.labels.org}}" data-label-process="{{t.contact.labels.process}}">
+          <h2 class="h4">{{t.contact.formTitle}}</h2>
+          <p class="notice" id="topic-banner" hidden>{{t.contact.securityBanner}}</p>
+          <label class="field"><span>{{t.contact.fields.name}}</span><input name="name" type="text" autocomplete="name"></label>
+          <label class="field"><span>{{t.contact.fields.org}}</span><input name="org" type="text" autocomplete="organization"></label>
+          <label class="field"><span>{{t.contact.fields.process}}</span><input name="process" type="text"></label>
+          <label class="field"><span>{{t.contact.fields.message}}</span><textarea name="message" rows="5"></textarea></label>
+          <button class="btn btn--dark" type="submit">{{t.contact.submit}}</button>
+          <p class="form-note">{{t.contact.formNote}}</p>
+        </form>
+      </div>
+    </section>

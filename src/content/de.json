@@ -1,0 +1,379 @@
+{
+  "meta": { "locale": "de_DE", "ogLocale": "de_DE" },
+  "slugs": {
+    "home": "",
+    "about": "ueber-uns",
+    "contact": "kontakt",
+    "imprint": "impressum",
+    "privacy": "datenschutz"
+  },
+  "seo": {
+    "home": {
+      "title": "State of Efficiency | Der effiziente Staat",
+      "description": "Agentische KI, die bürokratische Prozesse automatisiert. SOE lernen Sie an wie neue Mitarbeitende. Mit Fehlerkontrolle, abgesichertem Arbeitsplatz und Verarbeitung auf Servern in Deutschland."
+    },
+    "about": {
+      "title": "Über uns | State of Efficiency",
+      "description": "Raphael Cuadros und Timo Möller verbinden Erfahrung aus Bundesministerium und Zivilgesellschaft mit KI-Produktentwicklung für die öffentliche Hand."
+    },
+    "contact": {
+      "title": "Kontakt | State of Efficiency",
+      "description": "Zeigen Sie uns Ihre Prozesse. Im Erstgespräch schätzen wir ein, welche sich mit einem Agenten automatisieren lassen."
+    },
+    "imprint": {
+      "title": "Impressum | State of Efficiency",
+      "description": "Impressum von State of Efficiency."
+    },
+    "privacy": {
+      "title": "Datenschutz | State of Efficiency",
+      "description": "Datenschutzerklärung von State of Efficiency."
+    }
+  },
+  "a11y": {
+    "skip": "Zum Inhalt springen",
+    "menu": "Menü öffnen",
+    "home": "State of Efficiency, zur Startseite",
+    "mainNav": "Hauptnavigation",
+    "footerNav": "Fußzeile",
+    "langSwitch": "Zur englischen Version wechseln"
+  },
+  "nav": {
+    "product": "Produkt",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "switchLabel": "EN",
+    "tagline": "Der effiziente Staat"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Agentische KI für Verwaltungsprozesse",
+      "entry": {
+        "word": "State",
+        "pron": "/steɪt/",
+        "label": "Substantiv",
+        "senses": [
+          { "id": "1", "n": "1.", "word": "der Staat", "def": "Verwaltung, Behörden, öffentliche Hand" },
+          { "id": "2", "n": "2.", "word": "der Zustand", "def": "wie etwas gerade ist, und wie es sein könnte" }
+        ]
+      },
+      "title": "State of Efficiency.",
+      "lead": "<span class=\"sense\" data-sense=\"1\">Ein Staat</span>, der funktioniert. <span class=\"sense\" data-sense=\"2\">Ein Zustand</span>, in dem Verwaltung einfach läuft.",
+      "sub": "Bürokratie. Automatisiert. Mit agentischer KI, die Sie anlernen wie neue Mitarbeitende.",
+      "ctaPrimary": "Gespräch vereinbaren",
+      "ctaSecondary": "Mehr erfahren",
+      "chips": [
+        "Verarbeitung auf Servern in Deutschland",
+        "Ausgerichtet an ISO 27001 und DSGVO",
+        "Menschliche Freigabe an Prüfpunkten"
+      ]
+    },
+    "meanings": {
+      "eyebrow": "Zwei Bedeutungen, ein Ziel",
+      "title": "Ein Name, zwei Versprechen.",
+      "items": [
+        {
+          "n": "01",
+          "kicker": "State als Staat",
+          "title": "Ein Staat, der funktioniert.",
+          "text": "Behörden und Verbände tragen enorme Verantwortung und enorme Aktenberge. SOE übernimmt die Routine, damit Fachleute Zeit für Menschen und für die schwierigen Fälle haben."
+        },
+        {
+          "n": "02",
+          "kicker": "State als Zustand",
+          "title": "Ein Zustand, in dem es läuft.",
+          "text": "Effizienz ist kein Projekt mit Enddatum, sondern ein Zustand: keine Rückstaus, keine Medienbrüche, jeder Schritt nachvollziehbar."
+        }
+      ],
+      "closing": "Wir bringen den Staat in einen Zustand der Effizienz."
+    },
+    "soe": {
+      "id": "produkt",
+      "eyebrow": "Das Produkt",
+      "title": "SOE lernt wie eine neue Kollegin.",
+      "text": "SOE, die Initialen von State of Efficiency, ist der Agent auf unserer Plattform. Sie erklären ihm Ihren Prozess im Gespräch, so wie Sie ihn neuen Mitarbeitenden zeigen würden. SOE baut daraus den Workflow.",
+      "steps": [
+        {
+          "n": "01 · Erklären",
+          "title": "Im Gespräch statt im Formular",
+          "text": "Sie beschreiben den Prozess in Ihren Worten. SOE fragt nach, wo etwas unklar ist, und lässt sich Beispiele zeigen."
+        },
+        {
+          "n": "02 · Prüfen",
+          "title": "Der Workflow entsteht Schritt für Schritt",
+          "text": "SOE legt jeden Schritt sichtbar an. Sie korrigieren direkt, und jede Korrektur wird Teil der Regeln."
+        },
+        {
+          "n": "03 · Betreiben",
+          "title": "Der Agent arbeitet, Ihr Team entscheidet",
+          "text": "SOE bearbeitet die Fälle. An den Prüfpunkten, die Sie festlegen, gibt Ihr Team frei."
+        }
+      ],
+      "mock": {
+        "title": "Förderantrag · A-2026-0412",
+        "states": ["Zustand: bereit", "Zustand: läuft", "Zustand: Freigabe erforderlich"],
+        "chat": [
+          { "who": "Sie", "me": true, "text": "Bei Förderanträgen prüfst du zuerst, ob alle Unterlagen vollständig sind. Danach die Fristen." },
+          { "who": "SOE", "me": false, "text": "Verstanden. Was soll passieren, wenn ein Nachweis fehlt?" },
+          { "who": "Sie", "me": true, "text": "Dann fragst du schriftlich nach und setzt eine Frist von 14 Tagen." }
+        ],
+        "steps": [
+          { "text": "Unterlagen auf Vollständigkeit geprüft", "done": 1, "active": 0 },
+          { "text": "Fristen berechnet", "done": 1, "active": 0 },
+          { "text": "Entwurf des Bescheids erstellt", "done": 2, "active": 1 },
+          { "text": "Freigabe durch die Sachbearbeitung", "done": 9, "active": 2 }
+        ],
+        "approve": "Freigeben"
+      }
+    },
+    "features": {
+      "eyebrow": "Die Plattform",
+      "title": "Eine Plattform für Ihre Prozesse.",
+      "items": [
+        {
+          "title": "Workflows im Dialog",
+          "text": "Prozesse entstehen im Gespräch mit SOE, nicht in Projektplänen und Lastenheften."
+        },
+        {
+          "title": "Eine Plattform für alle Prozesse",
+          "text": "Vom Antrag bis zum Bescheid: ein Ort, an dem Workflows gebaut, betrieben und verbessert werden."
+        },
+        {
+          "title": "Freigabe an Prüfpunkten",
+          "text": "Sie legen fest, wo ein Mensch entscheidet. Der Rest läuft von selbst."
+        },
+        {
+          "title": "Lückenlos nachvollziehbar",
+          "text": "Jeder Schritt, jede Quelle und jede Entscheidung ist protokolliert und einsehbar."
+        },
+        {
+          "title": "Anbindung an Ihre Systeme",
+          "text": "SOE arbeitet mit Ihren Fachverfahren und Ablagen. Den Umfang klären wir im Erstgespräch."
+        },
+        {
+          "title": "Das Wissen bleibt im Haus",
+          "text": "Korrekturen Ihres Teams fließen in die Regeln. Was heute in wenigen Köpfen steckt, ist danach dokumentiert."
+        }
+      ]
+    },
+    "security": {
+      "id": "sicherheit",
+      "eyebrow": "Sicherheit",
+      "title": "Agenten brauchen Aufsicht.",
+      "text": "Ein Agent, dem man nicht vertrauen kann, spart keine Arbeit. Deshalb ist Kontrolle kein Zusatz, sondern Teil jedes Laufs.",
+      "guard": {
+        "kicker": "Fehlerkontrolle",
+        "title": "Fehler und Halluzinationen werden erkannt und behoben.",
+        "text": "Jeder Lauf wird auf nicht belegte Aussagen, falsche Werkzeugaufrufe und Abweichungen von Ihren Prozessvorgaben geprüft. Probleme werden mitten im Lauf abgefangen: Die Antwort wird korrigiert, oder der Schritt geht zur Freigabe an einen Menschen.",
+        "points": [
+          "Aussagen werden gegen Ihre Unterlagen geprüft",
+          "Korrektur oder Eskalation, bevor ein Fehler den Fall erreicht",
+          "Fehlerquoten im Zeitverlauf einsehbar"
+        ],
+        "mock": {
+          "title": "Lauf · Schritt 4",
+          "claim": "Der Antrag ist am 12.03.2026 eingegangen.",
+          "flag": "Nicht belegt",
+          "source": "Quelle: Eingangsstempel, Seite 1: 21.03.2026",
+          "fixed": "Korrigiert, bevor der Entwurf entsteht"
+        }
+      },
+      "space": {
+        "kicker": "Abgesicherter Arbeitsplatz",
+        "title": "Jeder Agent bekommt einen eigenen, abgeschotteten Arbeitsplatz.",
+        "text": "Der Agent arbeitet in einer isolierten Umgebung und darf nur, was Sie ihm erlauben. Alles andere bleibt gesperrt.",
+        "points": [
+          "Isolierte Umgebung und minimale Zugriffsrechte",
+          "Netzwerkregeln: nur freigegebene Systeme sind erreichbar",
+          "Zugangsdaten nutzbar, aber nie einsehbar",
+          "Freigabe für sensible Aktionen und vollständiges Protokoll"
+        ],
+        "mock": {
+          "title": "Arbeitsplatz · Richtlinie",
+          "rows": [
+            { "name": "Fachverfahren (intern)", "state": "Erlaubt", "ok": true },
+            { "name": "Dokumentenablage (intern)", "state": "Erlaubt", "ok": true },
+            { "name": "Alle anderen Ziele", "state": "Gesperrt", "ok": false }
+          ],
+          "secret": "Zugangsdaten",
+          "secretValue": "nutzbar, nicht einsehbar",
+          "approval": "Zahlung auslösen",
+          "approvalState": "wartet auf Freigabe"
+        }
+      },
+      "data": {
+        "kicker": "Datenhoheit",
+        "title": "Verarbeitung auf Servern in Deutschland.",
+        "text": "Wir verarbeiten die Daten Ihrer Prozesse ausschließlich auf deutschen Servern, nach den Anforderungen von ISO 27001 und DSGVO.",
+        "proof": "Erforderliche Sicherheits- und DSGVO-Nachweise und Zertifizierungen stellen wir auf Anfrage gerne bereit.",
+        "proofCta": "Nachweise anfragen"
+      }
+    },
+    "team": {
+      "eyebrow": "Für Ihr Team",
+      "title": "Ihr Team verliert die Routine, nicht die Rolle.",
+      "text": "SOE übernimmt, was sich wiederholt. Ausnahmen, Härtefälle und Gespräche mit Menschen bleiben bei Ihren Fachleuten."
+    },
+    "faq": {
+      "eyebrow": "Häufige Fragen",
+      "title": "Gut zu wissen.",
+      "items": [
+        {
+          "q": "Was passiert, wenn der Agent etwas Falsches behauptet?",
+          "a": "Kein System ist fehlerfrei. Deshalb prüft die Fehlerkontrolle jeden Lauf gegen Ihre Quellen. Nicht belegte Aussagen werden erkannt und korrigiert oder an einen Menschen weitergegeben, bevor sie in den Fall gelangen."
+        },
+        {
+          "q": "Wer trifft am Ende die Entscheidung?",
+          "a": "Ihr Team. Sie legen fest, an welchen Stellen ein Mensch prüft und freigibt. SOE bereitet vor und dokumentiert."
+        },
+        {
+          "q": "Wo werden unsere Daten verarbeitet?",
+          "a": "Wir verarbeiten die Daten Ihrer Prozesse ausschließlich auf deutschen Servern, nach den Anforderungen von ISO 27001 und DSGVO."
+        },
+        {
+          "q": "Welche Nachweise können wir bekommen?",
+          "a": "Erforderliche Sicherheits- und DSGVO-Nachweise und Zertifizierungen stellen wir auf Anfrage gerne bereit. <a href=\"[[href:contact?topic=security]]\">Nachweise anfragen</a>."
+        },
+        {
+          "q": "Lässt sich SOE an unsere Systeme anbinden?",
+          "a": "SOE wird an Ihre bestehenden Fachverfahren und Ablagen angebunden. Welche Systeme das sind und wie, klären wir gemeinsam im Erstgespräch."
+        },
+        {
+          "q": "Wie starten wir?",
+          "a": "Mit einem einzigen Prozess. Wir bauen den Agenten gemeinsam mit Ihnen auf, Sie lernen ihn an, und von dort wächst die Plattform mit Ihren Anforderungen."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Zustand ändern? Sprechen wir.",
+      "text": "Zeigen Sie uns Ihre Prozesse. Im Erstgespräch schätzen wir ein, welche sich mit einem Agenten automatisieren lassen, und bauen ihn gemeinsam mit Ihnen auf.",
+      "button": "Gespräch vereinbaren"
+    }
+  },
+  "about": {
+    "eyebrow": "Über uns",
+    "title": "Menschen, die den Staat von innen kennen.",
+    "text": "Wir haben im Bundesministerium gearbeitet, Organisationen der Zivilgesellschaft geführt und KI-Werkzeuge für Bundesministerien entwickelt. Aus beidem ist State of Efficiency entstanden: Wir bringen den Staat in einen Zustand der Effizienz.",
+    "linkedin": "Auf LinkedIn ansehen",
+    "people": [
+      {
+        "key": "raphael",
+        "photo": "raphael-cuadros.jpg",
+        "name": "Raphael Cuadros",
+        "alt": "Porträt von Raphael Cuadros",
+        "tagline": "Staat und Zivilgesellschaft von innen",
+        "summary": "Raphael hat Fördermittel im Bundesfamilienministerium koordiniert, im Vorstand von Sea-Watch e.V. gearbeitet und zuletzt die Geschäftsführung des Kinderschutzbundes Berlin mitverantwortet.",
+        "roles": [
+          {
+            "title": "Stellvertretender Geschäftsführer",
+            "org": "Der Kinderschutzbund, Landesverband Berlin",
+            "period": "Juni 2025 – Aug. 2026"
+          },
+          {
+            "title": "Vorstand (Executive Board)",
+            "org": "Sea-Watch e.V.",
+            "period": "März 2023 – Sep. 2024"
+          },
+          {
+            "title": "Policy Advisor",
+            "org": "Bundesfamilienministerium, Berlin",
+            "period": "Mai 2019 – Aug. 2022",
+            "text": "Koordinierung von Förderung und Aufsicht für 40 zivilgesellschaftliche Organisationen im Referat für Demokratieförderung. Nach einem Jahr in den Personalrat gewählt, um die Interessen der Beschäftigten zu vertreten."
+          }
+        ]
+      },
+      {
+        "key": "timo",
+        "photo": "timo-moeller.jpg",
+        "name": "Timo Möller",
+        "alt": "Porträt von Timo Möller",
+        "tagline": "KI-Produkte für die öffentliche Hand",
+        "summary": "Timo hat das KI-Startup deepset mitgegründet und dort KI-Werkzeuge für Bundesministerien entwickelt.",
+        "roles": [
+          {
+            "title": "Co-Founder",
+            "org": "deepset",
+            "period": "Apr. 2018 – Dez. 2023",
+            "text": "Gemeinsam mit Malte und Milos gegründet. Das Team wuchs von drei Personen auf ein professionelles, internationales Team von mehr als 60 Menschen. Timo prägte die Produkte (Haystack und deepset Cloud) sowie Kultur und Prozesse."
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Sprechen wir.",
+    "text": "Erzählen Sie uns, welcher Prozess Sie am meisten Zeit kostet. Im Erstgespräch schätzen wir ein, ob und wie ein Agent ihn übernehmen kann.",
+    "mailLabel": "Schreiben Sie uns direkt",
+    "copy": "Adresse kopieren",
+    "copied": "Kopiert",
+    "formTitle": "Oder beschreiben Sie kurz Ihr Anliegen",
+    "formNote": "Das Formular öffnet Ihr E-Mail-Programm mit einer vorbereiteten Nachricht. Es werden keine Daten auf dieser Website gespeichert.",
+    "fields": {
+      "name": "Name",
+      "org": "Organisation",
+      "process": "Welchen Prozess möchten Sie automatisieren?",
+      "message": "Nachricht"
+    },
+    "submit": "E-Mail vorbereiten",
+    "subjectDefault": "Erstgespräch",
+    "subjectSecurity": "Sicherheitsnachweise anfragen",
+    "messageSecurity": "Guten Tag, wir würden gerne die erforderlichen Sicherheits- und DSGVO-Nachweise und Zertifizierungen erhalten.",
+    "greeting": "Guten Tag,",
+    "labels": { "name": "Name", "org": "Organisation", "process": "Prozess" },
+    "securityBanner": "Sie fragen Sicherheits- und DSGVO-Nachweise an. Wir senden sie auf Anfrage gerne zu."
+  },
+  "footer": {
+    "tagline": "Effizienz ist ein Zustand. Und eine Aufgabe des Staates.",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "rights": "State of Efficiency"
+  },
+  "imprint": {
+    "title": "Impressum",
+    "sections": [
+      {
+        "h": "Angaben gemäß § 5 DDG",
+        "p": ["[[imprint.name]]<br>[[imprint.street]]<br>[[imprint.city]]"]
+      },
+      {
+        "h": "Kontakt",
+        "p": ["E-Mail: [[mail:imprint]]"]
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "sections": [
+      {
+        "h": "Verantwortlicher",
+        "p": ["Verantwortlich für die Datenverarbeitung auf dieser Website ist:", "[[imprint.name]]<br>[[imprint.street]]<br>[[imprint.city]]<br>E-Mail: [[mail:imprint]]"]
+      },
+      {
+        "h": "Hosting über GitHub Pages",
+        "p": [
+          "Diese Website wird über GitHub Pages bereitgestellt (GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Beim Aufruf der Seiten verarbeitet der Hosting-Anbieter technisch notwendige Verbindungsdaten, insbesondere Ihre IP-Adresse sowie Datum und Uhrzeit des Zugriffs, in Server-Logfiles. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt in der sicheren und effizienten Bereitstellung dieser Website.",
+          "Dabei kann eine Übermittlung in die USA stattfinden. GitHub nimmt nach unserer Kenntnis am EU-US Data Privacy Framework teil."
+        ]
+      },
+      {
+        "h": "Schriftarten",
+        "p": ["Die verwendeten Schriftarten werden von dieser Website selbst ausgeliefert. Es wird keine Verbindung zu Servern von Schriftanbietern aufgebaut."]
+      },
+      {
+        "h": "Kontaktaufnahme",
+        "p": ["Wenn Sie uns per E-Mail kontaktieren, verarbeiten wir die von Ihnen mitgeteilten Daten (zum Beispiel Name, E-Mail-Adresse und Inhalt der Nachricht), um Ihre Anfrage zu beantworten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b oder lit. f DSGVO. Das Kontaktformular auf dieser Website öffnet lediglich Ihr E-Mail-Programm. Die Eingaben werden von der Website weder übertragen noch gespeichert."]
+      },
+      {
+        "h": "Cookies und Tracking",
+        "p": ["Diese Website verwendet keine Cookies und kein Tracking oder Webanalyse. Ihre gewählte Sprache (de oder en) wird ausschließlich lokal in Ihrem Browser gespeichert, damit wir Sie beim nächsten Besuch zur passenden Version leiten können. Diese Information wird nicht an uns übertragen."]
+      },
+      {
+        "h": "Ihre Rechte",
+        "p": [
+          "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten. Wenden Sie sich dazu an die oben genannte Adresse.",
+          "Außerdem haben Sie das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren, zum Beispiel bei der Berliner Beauftragten für Datenschutz und Informationsfreiheit."
+        ]
+      }
+    ]
+  }
+}

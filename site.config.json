@@ -1,0 +1,25 @@
+{
+  "name": "State of Efficiency",
+  "baseUrl": "https://timoeller.github.io/cursor-stateofefficiency-website/",
+  "languages": ["de", "en"],
+  "defaultLanguage": "de",
+  "hostLanguages": {
+    ".de": "de",
+    ".com": "en"
+  },
+  "email": {
+    "de": "kontakt@stateofefficiency.de",
+    "en": "contact@stateofefficiency.com"
+  },
+  "imprint": {
+    "name": "Timo Möller",
+    "street": "Liebigstraße 35",
+    "city": "10247 Berlin",
+    "email": "kontakt@stateofefficiency.de"
+  },
+  "linkedin": {
+    "raphael": "https://www.linkedin.com/in/raphaelcuadros/",
+    "timo": "https://www.linkedin.com/in/timo-moeller/"
+  },
+  "year": 2026
+}

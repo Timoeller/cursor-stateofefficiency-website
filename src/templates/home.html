@@ -1,0 +1,181 @@
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="eyebrow">{{t.home.hero.eyebrow}}</p>
+        <div class="entry" aria-label="{{t.home.hero.entry.word}}">
+          <div class="entry-head">
+            <span class="entry-word">{{t.home.hero.entry.word}}</span>
+            <span class="entry-pron">{{t.home.hero.entry.pron}}</span>
+            <span class="entry-label">{{t.home.hero.entry.label}}</span>
+          </div>
+          <ol class="entry-senses">
+            {{#each t.home.hero.entry.senses}}<li class="sense" data-sense="{{id}}"><span class="sense-n">{{n}}</span> <strong>{{word}}</strong> <span class="sense-def">{{def}}</span></li>
+            {{/each}}
+          </ol>
+        </div>
+        <h1 id="hero-title" class="display">{{t.home.hero.title}}</h1>
+        <p class="hero-lead">{{t.home.hero.lead}}</p>
+        <p class="hero-sub">{{t.home.hero.sub}}</p>
+        <div class="hero-actions">
+          <a class="btn btn--dark" href="{{url.contact}}">{{t.home.hero.ctaPrimary}}</a>
+          <a class="btn btn--ghost" href="#{{t.home.soe.id}}">{{t.home.hero.ctaSecondary}}</a>
+        </div>
+        <ul class="chips">
+          {{#each t.home.hero.chips}}<li class="chip">{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="meanings-title">
+      <div class="container">
+        <p class="eyebrow">{{t.home.meanings.eyebrow}}</p>
+        <h2 id="meanings-title" class="h2">{{t.home.meanings.title}}</h2>
+        <div class="meanings">
+          {{#each t.home.meanings.items}}<article class="meaning reveal" data-sense="{{@n}}">
+            <p class="meaning-n">{{n}} · {{kicker}}</p>
+            <h3 class="h3">{{title}}</h3>
+            <p class="muted">{{text}}</p>
+          </article>
+          {{/each}}
+        </div>
+        <p class="closing reveal">{{t.home.meanings.closing}}</p>
+      </div>
+    </section>
+
+    <section class="section section--soe" id="{{t.home.soe.id}}" aria-labelledby="soe-title">
+      <div class="container">
+        <div class="soe-intro">
+          <p class="eyebrow">{{t.home.soe.eyebrow}}</p>
+          <h2 id="soe-title" class="h2">{{t.home.soe.title}}</h2>
+          <p class="lead">{{t.home.soe.text}}</p>
+        </div>
+        <div class="soe-grid">
+          <ol class="steps">
+            {{#each t.home.soe.steps}}<li class="step reveal">
+              <p class="step-n">{{n}}</p>
+              <h3 class="h4">{{title}}</h3>
+              <p class="muted">{{text}}</p>
+            </li>
+            {{/each}}
+          </ol>
+          <div class="card mock reveal" data-mock data-phase="2" role="img" aria-label="{{t.home.soe.mock.title}}">
+            <div class="mock-head">
+              <span class="mock-title">{{t.home.soe.mock.title}}</span>
+              <span class="status" aria-live="off">
+                {{#each t.home.soe.mock.states}}<span class="status-text st-{{@i}}">{{this}}</span>{{/each}}
+              </span>
+            </div>
+            <div class="chat">
+              {{#each t.home.soe.mock.chat}}<div class="bubble{{#if me}} bubble--me{{/if}}"><span class="bubble-who">{{who}}</span>{{text}}</div>
+              {{/each}}
+            </div>
+            <ul class="checklist">
+              {{#each t.home.soe.mock.steps}}<li data-done="{{done}}" data-active="{{active}}" class="{{initial}}"><span class="tick" aria-hidden="true"></span>{{text}}</li>
+              {{/each}}
+            </ul>
+            <div class="mock-foot"><span class="approve">{{t.home.soe.mock.approve}}</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="features-title">
+      <div class="container">
+        <p class="eyebrow">{{t.home.features.eyebrow}}</p>
+        <h2 id="features-title" class="h2">{{t.home.features.title}}</h2>
+        <div class="grid grid--3">
+          {{#each t.home.features.items}}<article class="feature reveal">
+            <span class="feature-n">{{num}}</span>
+            <h3 class="h4">{{title}}</h3>
+            <p class="muted">{{text}}</p>
+          </article>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="{{t.home.security.id}}" aria-labelledby="security-title">
+      <div class="container">
+        <div class="soe-intro">
+          <p class="eyebrow">{{t.home.security.eyebrow}}</p>
+          <h2 id="security-title" class="h2">{{t.home.security.title}}</h2>
+          <p class="lead">{{t.home.security.text}}</p>
+        </div>
+
+        <article class="sec-block reveal">
+          <div class="sec-copy">
+            <p class="kicker">{{t.home.security.guard.kicker}}</p>
+            <h3 class="h3">{{t.home.security.guard.title}}</h3>
+            <p class="muted">{{t.home.security.guard.text}}</p>
+            <ul class="points">
+              {{#each t.home.security.guard.points}}<li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+          <div class="card trace" role="img" aria-label="{{t.home.security.guard.mock.title}}">
+            <div class="mock-head"><span class="mock-title">{{t.home.security.guard.mock.title}}</span></div>
+            <p class="claim"><mark>{{t.home.security.guard.mock.claim}}</mark></p>
+            <p class="flag"><span class="pill pill--warn">{{t.home.security.guard.mock.flag}}</span> {{t.home.security.guard.mock.source}}</p>
+            <p class="fixed"><span class="pill pill--ok">✓</span> {{t.home.security.guard.mock.fixed}}</p>
+          </div>
+        </article>
+
+        <article class="sec-block sec-block--flip reveal">
+          <div class="sec-copy">
+            <p class="kicker">{{t.home.security.space.kicker}}</p>
+            <h3 class="h3">{{t.home.security.space.title}}</h3>
+            <p class="muted">{{t.home.security.space.text}}</p>
+            <ul class="points">
+              {{#each t.home.security.space.points}}<li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+          <div class="card policy" role="img" aria-label="{{t.home.security.space.mock.title}}">
+            <div class="mock-head"><span class="mock-title">{{t.home.security.space.mock.title}}</span></div>
+            <ul class="policy-rows">
+              {{#each t.home.security.space.mock.rows}}<li class="policy-row{{#if ok}} is-ok{{/if}}"><span class="dot" aria-hidden="true"></span><span class="policy-name">{{name}}</span><span class="policy-state">{{state}}</span></li>
+              {{/each}}
+            </ul>
+            <div class="policy-extra">
+              <p><span class="policy-name">{{t.home.security.space.mock.secret}}</span><span class="secret"><i>••••••••</i> {{t.home.security.space.mock.secretValue}}</span></p>
+              <p><span class="policy-name">{{t.home.security.space.mock.approval}}</span><span class="pill pill--warn">{{t.home.security.space.mock.approvalState}}</span></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="data-block reveal">
+          <p class="kicker">{{t.home.security.data.kicker}}</p>
+          <h3 class="h3">{{t.home.security.data.title}}</h3>
+          <p class="muted">{{t.home.security.data.text}}</p>
+          <p class="muted">{{t.home.security.data.proof}} <a class="link" href="{{url.contactSecurity}}">{{t.home.security.data.proofCta}}</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="team-title">
+      <div class="container">
+        <div class="team-card reveal">
+          <p class="eyebrow">{{t.home.team.eyebrow}}</p>
+          <h2 id="team-title" class="h2">{{t.home.team.title}}</h2>
+          <p class="lead">{{t.home.team.text}}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="faq-title">
+      <div class="container faq-wrap">
+        <div>
+          <p class="eyebrow">{{t.home.faq.eyebrow}}</p>
+          <h2 id="faq-title" class="h2">{{t.home.faq.title}}</h2>
+        </div>
+        <div class="faq">
+          {{#each t.home.faq.items}}<details>
+            <summary>{{q}}</summary>
+            <p class="muted">{{a}}</p>
+          </details>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+
+{{> cta}}
