@@ -260,42 +260,16 @@
         "photo": "raphael-cuadros.jpg",
         "name": "Raphael Cuadros",
         "alt": "Portrait of Raphael Cuadros",
-        "tagline": "The state and civil society from the inside",
-        "summary": "Raphael coordinated funding at the Federal Ministry for Family Affairs, served on the executive board of Sea-Watch e.V. and most recently helped lead the Child Protection Association in Berlin.",
-        "roles": [
-          {
-            "title": "Deputy Managing Director",
-            "org": "Der Kinderschutzbund, Landesverband Berlin",
-            "period": "Jun 2025 – Aug 2026"
-          },
-          {
-            "title": "Executive Board",
-            "org": "Sea-Watch e.V.",
-            "period": "Mar 2023 – Sep 2024"
-          },
-          {
-            "title": "Policy Advisor",
-            "org": "Federal Ministry for Family Affairs, Berlin",
-            "period": "May 2019 – Aug 2022",
-            "text": "Coordinated funding and supervision for 40 civil society organisations through the department for democracy promotion. Elected to the works council after one year to negotiate on behalf of the staff."
-          }
-        ]
+        "tagline": "The state from the inside",
+        "summary": "Raphael knows the state from the inside. At the Federal Ministry for Family Affairs he coordinated funding and supervision and saw how decisions in a public authority actually come about: between departments, staff representation and political responsibility. In leadership roles at the Child Protection Association in Berlin and at Sea-Watch e.V. he led organisations, gave complex work a clear structure and mediated between administration, politics and teams. That combination of inside knowledge, organisation and clear communication is what it takes to build secure AI agents for public institutions."
       },
       {
         "key": "timo",
         "photo": "timo-moeller.jpg",
         "name": "Timo Möller",
         "alt": "Portrait of Timo Möller",
-        "tagline": "AI products for the public sector",
-        "summary": "Timo co-founded the AI startup deepset, where he developed AI tooling for federal ministries.",
-        "roles": [
-          {
-            "title": "Co-Founder",
-            "org": "deepset",
-            "period": "Apr 2018 – Dec 2023",
-            "text": "Started together with Malte and Milos. The team grew from three people to a highly professional, international team of more than 60. Timo helped shape the products (Haystack and deepset Cloud) as well as the culture and processes."
-          }
-        ]
+        "tagline": "Secure AI for government and industry",
+        "summary": "Timo builds secure AI products for German and European public institutions and for industry. As co-founder of deepset he developed AI tooling for federal ministries. He has extensive experience delivering security-certified SaaS applications as well as tightly sealed, high-security on-premise systems. That is how agents are built to meet the demands of government: traceable, secured, and connected to the systems already in place."
       }
     ]
   },
