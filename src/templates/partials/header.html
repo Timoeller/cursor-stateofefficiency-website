@@ -1,0 +1,17 @@
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{{url.home}}" aria-label="{{a11y.home}}">
+        <svg class="brand-mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#000"/><circle cx="16" cy="16" r="7" fill="none" stroke="#fff" stroke-width="2.5"/><circle cx="16" cy="16" r="2.6" fill="#fff"/></svg>
+        <span class="brand-name">State of Efficiency</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="{{a11y.mainNav}}">
+        <a class="nav-link{{navCurrent.home}}" href="{{url.home}}">{{nav.product}}</a>
+        <a class="nav-link{{navCurrent.about}}" href="{{url.about}}">{{nav.about}}</a>
+      </nav>
+      <div class="header-actions">
+        <a class="lang-switch" href="{{switchUrl}}" hreflang="{{otherLang}}" lang="{{otherLang}}" title="{{a11y.langSwitch}}" aria-label="{{a11y.langSwitch}}" data-set-lang="{{otherLang}}">{{nav.switchLabel}}</a>
+        <a class="btn btn--dark btn--sm" href="{{url.contact}}">{{nav.contact}}</a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="{{a11y.menu}}"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
