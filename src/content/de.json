@@ -260,42 +260,16 @@
         "photo": "raphael-cuadros.jpg",
         "name": "Raphael Cuadros",
         "alt": "Porträt von Raphael Cuadros",
-        "tagline": "Staat und Zivilgesellschaft von innen",
-        "summary": "Raphael hat Fördermittel im Bundesfamilienministerium koordiniert, im Vorstand von Sea-Watch e.V. gearbeitet und zuletzt die Geschäftsführung des Kinderschutzbundes Berlin mitverantwortet.",
-        "roles": [
-          {
-            "title": "Stellvertretender Geschäftsführer",
-            "org": "Der Kinderschutzbund, Landesverband Berlin",
-            "period": "Juni 2025 – Aug. 2026"
-          },
-          {
-            "title": "Vorstand (Executive Board)",
-            "org": "Sea-Watch e.V.",
-            "period": "März 2023 – Sep. 2024"
-          },
-          {
-            "title": "Policy Advisor",
-            "org": "Bundesfamilienministerium, Berlin",
-            "period": "Mai 2019 – Aug. 2022",
-            "text": "Koordinierung von Förderung und Aufsicht für 40 zivilgesellschaftliche Organisationen im Referat für Demokratieförderung. Nach einem Jahr in den Personalrat gewählt, um die Interessen der Beschäftigten zu vertreten."
-          }
-        ]
+        "tagline": "Der Staat von innen",
+        "summary": "Raphael kennt den Staat von innen. Im Bundesfamilienministerium hat er Förderung und Aufsicht koordiniert und erlebt, wie Entscheidungen in einer Behörde wirklich zustande kommen: zwischen Fachreferaten, Mitbestimmung und politischer Verantwortung. In Führungspositionen beim Kinderschutzbund Berlin und bei Sea-Watch e.V. hat er Organisationen geleitet, komplexe Vorhaben strukturiert und zwischen Verwaltung, Politik und Teams vermittelt. Genau diese Kombination aus Innenkenntnis, Organisation und klarer Kommunikation braucht es, um sichere KI-Agenten für öffentliche Institutionen zu bauen."
       },
       {
         "key": "timo",
         "photo": "timo-moeller.jpg",
         "name": "Timo Möller",
         "alt": "Porträt von Timo Möller",
-        "tagline": "KI-Produkte für die öffentliche Hand",
-        "summary": "Timo hat das KI-Startup deepset mitgegründet und dort KI-Werkzeuge für Bundesministerien entwickelt.",
-        "roles": [
-          {
-            "title": "Co-Founder",
-            "org": "deepset",
-            "period": "Apr. 2018 – Dez. 2023",
-            "text": "Gemeinsam mit Malte und Milos gegründet. Das Team wuchs von drei Personen auf ein professionelles, internationales Team von mehr als 60 Menschen. Timo prägte die Produkte (Haystack und deepset Cloud) sowie Kultur und Prozesse."
-          }
-        ]
+        "tagline": "Sichere KI für Staat und Industrie",
+        "summary": "Timo entwickelt sichere KI-Produkte für deutsche und europäische öffentliche Institutionen und für die Industrie. Als Mitgründer von deepset hat er KI-Werkzeuge für Bundesministerien gebaut. Er bringt umfangreiche Erfahrung darin mit, sicherheitszertifizierte SaaS-Anwendungen zu liefern und ebenso dicht abgeschottete On-Premise-Systeme mit hohen Sicherheitsanforderungen. So entstehen Agenten, die den Ansprüchen der Verwaltung standhalten: nachvollziehbar, abgesichert und an die Systeme angebunden, die bereits im Einsatz sind."
       }
     ]
   },

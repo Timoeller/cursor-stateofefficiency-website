@@ -267,15 +267,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .avatar { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; background: var(--soft); border: 1px solid var(--line); }
 .person-body .h2 { margin-bottom: 8px; }
 .person-body .kicker { margin-bottom: 14px; }
-.person-body > .muted { max-width: 40rem; }
-.roles { margin: 28px 0; display: grid; gap: 0; max-width: 44rem; }
-.role { padding: 18px 0; border-top: 1px solid var(--line-soft); }
-.role:last-child { border-bottom: 1px solid var(--line-soft); }
-.role-head { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-.role-title { font-family: var(--display); font-weight: 700; letter-spacing: -0.02em; }
-.role-period { color: var(--muted-2); font-size: 0.9rem; }
-.role-org { color: var(--ink-soft); font-size: 0.97rem; }
-.role-text { margin-top: 8px; font-size: 0.95rem; }
+.person-summary { max-width: 42rem; margin-bottom: 28px; }
 .btn svg { flex: none; }
 
 /* contact */
