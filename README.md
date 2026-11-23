@@ -47,11 +47,11 @@ The DE/EN switch in the header always works.
 
 ## Domains
 
-The site is served at `https://stateofefficiency.de/`. `site.config.json` holds the domain in `domain` (the build writes it to `dist/CNAME`, which sets the GitHub Pages custom domain) and the address in `baseUrl` (canonical and `hreflang` links).
+The site is served at `https://stateofefficiency.de/`. `site.config.json` holds the domain in `domain` and the address in `baseUrl` (canonical and `hreflang` links). The build also writes `dist/CNAME` so the intended domain is recorded in the published files.
 
-GitHub Pages serves exactly one custom domain per site, so `stateofefficiency.de` is the primary domain and `stateofefficiency.com` redirects to the English pages. The DNS for both domains already points at GitHub Pages (apex A records to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`, `www` as a CNAME to `timoeller.github.io`).
+GitHub Pages serves exactly one custom domain per site, and for a site published with a GitHub Actions workflow that domain is set in the repository settings, not by the `CNAME` file (GitHub ignores it). `stateofefficiency.de` is the primary domain and `stateofefficiency.com` redirects to the English pages. The DNS for both domains already points at GitHub Pages (apex A records to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`, `www` as a CNAME to `timoeller.github.io`).
 
-`stateofefficiency.de` needs nothing more at IONOS. After a deploy that contains the `CNAME` file, GitHub provisions the certificate and serves the domain. In **Settings > Pages**, tick **Enforce HTTPS** once the checkbox becomes available.
+`stateofefficiency.de` needs nothing more at IONOS. In the repository, open **Settings > Pages**, enter `stateofefficiency.de` under **Custom domain** and save. GitHub then checks the DNS and provisions the certificate. Tick **Enforce HTTPS** once the checkbox becomes available.
 
 `stateofefficiency.com` cannot be served by the same Pages site. In the IONOS control panel, set up domain forwarding for `stateofefficiency.com` (including `www`) as an HTTP redirect to `https://stateofefficiency.de/en/`. This replaces the domain's A records, which is intended. Visitors to the `.com` domain then land on the English site. Forwarding redirects the whole domain to that one address, so individual paths are not preserved; share links with the `.de` domain.
 
