@@ -47,7 +47,7 @@
     "hero": {
       "eyebrow": "Agentische KI für die Verwaltung",
       "title": "State of Efficiency.",
-      "lead": "<span class=\"sense\" data-sense=\"1\">Ein effizienter Staat</span>, ist <span class=\"sense\" data-sense=\"2\">ein Zustand</span> der Effizienz.",
+      "lead": "Ein effizienter <span class=\"sense\" data-sense=\"1\">Staat</span>, ist ein <span class=\"sense\" data-sense=\"2\">Zustand</span> der Effizienz.",
       "sub": "Bürokratie. Automatisiert. Mit agentischer KI, die Sie anlernen wie neue Mitarbeitende.",
       "ctaPrimary": "Gespräch vereinbaren",
       "ctaSecondary": "Mehr erfahren",
@@ -73,8 +73,7 @@
           "title": "Ein Zustand, in dem es läuft.",
           "text": "Effizienz ist kein Projekt mit Enddatum, sondern ein Zustand: keine Rückstaus, keine Wartezeiten, jeder Schritt nachvollziehbar."
         }
-      ],
-      "closing": "Wir bringen den Staat in einen Zustand der Effizienz."
+      ]
     },
     "soe": {
       "id": "produkt",
@@ -207,7 +206,7 @@
   "about": {
     "eyebrow": "Über uns",
     "title": "Menschen, die den Staat von innen kennen.",
-    "text": "Wir haben im Bundesministerium gearbeitet, Organisationen der Zivilgesellschaft geführt und KI-Werkzeuge für Bundesministerien entwickelt. Aus beidem ist State of Efficiency entstanden: Wir bringen den Staat in einen Zustand der Effizienz.",
+    "text": "Wir haben im Bundesministerium gearbeitet, Organisationen der Zivilgesellschaft geführt und KI-Werkzeuge für Bundesministerien entwickelt. Aus beidem ist State of Efficiency entstanden.",
     "linkedin": "Auf LinkedIn ansehen",
     "people": [
       {
