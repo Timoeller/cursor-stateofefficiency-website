@@ -6,14 +6,6 @@
   function $(sel, ctx) { return (ctx || document).querySelector(sel); }
   function $$(sel, ctx) { return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); }
 
-  /* remember the language the visitor chose */
-  $$('[data-set-lang]').forEach(function (link) {
-    link.addEventListener('click', function () {
-      try { localStorage.setItem('soe-lang', link.getAttribute('data-set-lang')); } catch (e) {}
-    });
-  });
-  try { localStorage.setItem('soe-lang', document.body.getAttribute('data-lang')); } catch (e) {}
-
   /* mobile menu */
   var menuBtn = $('.menu-btn');
   var nav = $('#nav');

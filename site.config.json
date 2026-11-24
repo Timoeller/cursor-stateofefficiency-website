@@ -2,15 +2,9 @@
   "name": "State of Efficiency",
   "baseUrl": "https://stateofefficiency.de/",
   "domain": "stateofefficiency.de",
-  "languages": ["de", "en"],
-  "defaultLanguage": "de",
-  "hostLanguages": {
-    ".de": "de",
-    ".com": "en"
-  },
+  "languages": ["de"],
   "email": {
-    "de": "kontakt@stateofefficiency.de",
-    "en": "contact@stateofefficiency.com"
+    "de": "kontakt@stateofefficiency.de"
   },
   "imprint": {
     "name": "Timo Möller",
