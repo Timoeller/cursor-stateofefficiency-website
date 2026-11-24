@@ -157,8 +157,6 @@ button, input, textarea { font: inherit; color: inherit; }
 .meaning { border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(24px, 3vw, 40px); }
 .meaning-n { font-family: var(--display); font-weight: 700; font-size: 0.82rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted-2); margin-bottom: 28px; }
 .meaning .h3 { margin-bottom: 14px; }
-.closing { font-family: var(--display); font-weight: 700; font-size: clamp(1.4rem, 3vw, 2.2rem); letter-spacing: -0.03em; line-height: 1.15; margin-top: clamp(32px, 4vw, 56px); max-width: 36rem; }
-
 /* soe */
 .soe-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: clamp(32px, 5vw, 72px); align-items: start; }
 .steps { display: grid; gap: 0; counter-reset: s; }
