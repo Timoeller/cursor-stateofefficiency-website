@@ -44,16 +44,7 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Agentische KI für Verwaltungsprozesse",
-      "entry": {
-        "word": "State",
-        "pron": "/steɪt/",
-        "label": "Substantiv",
-        "senses": [
-          { "id": "1", "n": "1.", "word": "der Staat", "def": "Verwaltung, Behörden, öffentliche Hand" },
-          { "id": "2", "n": "2.", "word": "der Zustand", "def": "wie etwas gerade ist, und wie es sein könnte" }
-        ]
-      },
+      "eyebrow": "Agentische KI für die Verwaltung",
       "title": "State of Efficiency.",
       "lead": "<span class=\"sense\" data-sense=\"1\">Ein Staat</span>, der funktioniert. <span class=\"sense\" data-sense=\"2\">Ein Zustand</span>, in dem Verwaltung einfach läuft.",
       "sub": "Bürokratie. Automatisiert. Mit agentischer KI, die Sie anlernen wie neue Mitarbeitende.",
