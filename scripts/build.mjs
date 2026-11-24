@@ -133,8 +133,8 @@ function makeRenderer(partials) {
 
 const PAGES = ['home', 'about', 'contact', 'imprint', 'privacy'];
 
-function pageDir(lang, slugs, page) {
-  return slugs[page] ? `${lang}/${slugs[page]}` : lang;
+function pageDir(slugs, page) {
+  return slugs[page] || '';
 }
 
 function relUrl(fromDir, toDir, query = '') {
@@ -201,26 +201,22 @@ async function main() {
   await write(path.join(dist, '.nojekyll'), '');
   if (site.domain) await write(path.join(dist, 'CNAME'), `${site.domain}\n`);
 
-  for (const lang of site.languages) {
-    const otherLang = site.languages.find((l) => l !== lang);
-    const email = site.email[lang];
-    const slugs = content[lang].slugs;
+  const lang = site.languages[0];
+  const email = site.email[lang];
+  const slugs = content[lang].slugs;
 
-    for (const page of PAGES) {
-      const dir = pageDir(lang, slugs, page);
+  for (const page of PAGES) {
+      const dir = pageDir(slugs, page);
       const rootRel = `${posix.relative(dir, '') || '.'}/`;
 
       const url = {};
-      for (const p of PAGES) url[p] = relUrl(dir, pageDir(lang, slugs, p));
-      url.contactSecurity = relUrl(dir, pageDir(lang, slugs, 'contact'), '?topic=security');
-
-      const otherSlugs = content[otherLang].slugs;
-      const switchUrl = relUrl(dir, pageDir(otherLang, otherSlugs, page));
+      for (const p of PAGES) url[p] = relUrl(dir, pageDir(slugs, p));
+      url.contactSecurity = relUrl(dir, pageDir(slugs, 'contact'), '?topic=security');
 
       const resolve = (s) =>
         s
           .replace(/\[\[href:([a-z]+)(\?[^\]]*)?\]\]/g, (_, p, q = '') =>
-            relUrl(dir, pageDir(lang, slugs, p), q)
+            relUrl(dir, pageDir(slugs, p), q)
           )
           .replace(/\[\[mail:imprint\]\]/g, () => {
             const e = site.imprint.email;
@@ -237,24 +233,14 @@ async function main() {
         step.initial = step.done <= 2 ? 'is-done' : step.active === 2 ? 'is-active' : '';
       }
 
-      const alternates = [
-        ...site.languages.map((l) => ({
-          hreflang: l,
-          href: `${site.baseUrl}${pageDir(l, content[l].slugs, page)}/`
-        })),
-        { hreflang: 'x-default', href: site.baseUrl }
-      ];
-
       const data = {
         lang,
-        otherLang,
         page,
         site,
         root: rootRel,
         assets: `${rootRel}assets/`,
         email,
         url,
-        switchUrl,
         t,
         a11y: t.a11y,
         nav: t.nav,
@@ -266,27 +252,54 @@ async function main() {
           home: page === 'home' ? ' is-current' : '',
           about: page === 'about' ? ' is-current' : ''
         },
-        canonical: `${site.baseUrl}${dir}/`,
-        alternates
+        canonical: `${site.baseUrl}${dir ? `${dir}/` : ''}`,
+        alternates: []
       };
 
       const body = render(`page:${page}`, pageTemplates[page], data);
       const html = render('layout', layout, { ...data, content: body });
       await write(path.join(dist, dir, 'index.html'), html);
-    }
   }
 
-  const router = (await readText(path.join(tplDir, 'router.html')))
-    .replace('__HOSTS__', JSON.stringify(site.hostLanguages))
-    .replace('__LANGS__', JSON.stringify(site.languages))
-    .replace('__DEFAULT__', JSON.stringify(site.defaultLanguage))
-    .replaceAll('__BASE__', site.baseUrl);
-  await write(path.join(dist, 'index.html'), router);
+  const legacy = {
+    de: '',
+    'de/ueber-uns': 'ueber-uns',
+    'de/kontakt': 'kontakt',
+    'de/impressum': 'impressum',
+    'de/datenschutz': 'datenschutz',
+    en: '',
+    'en/about': 'ueber-uns',
+    'en/contact': 'kontakt',
+    'en/imprint': 'impressum',
+    'en/privacy': 'datenschutz'
+  };
+  for (const [from, to] of Object.entries(legacy)) {
+    const rel = `${posix.relative(from, to) || '.'}/`;
+    const abs = `${site.baseUrl}${to ? `${to}/` : ''}`;
+    await write(
+      path.join(dist, from, 'index.html'),
+      `<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Weiterleitung | State of Efficiency</title>
+  <link rel="canonical" href="${abs}">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url=${rel}">
+  <script>location.replace(${JSON.stringify(rel)} + location.search + location.hash);</script>
+</head>
+<body>
+  <p><a href="${rel}">Weiter zur Seite</a></p>
+</body>
+</html>
+`
+    );
+  }
 
   const notFound = (await readText(path.join(tplDir, '404.html'))).replaceAll('__BASE__', site.baseUrl);
   await write(path.join(dist, '404.html'), notFound);
 
-  console.log(`Built ${site.languages.length * PAGES.length} pages into ${path.relative(root, dist)}/`);
+  console.log(`Built ${PAGES.length} pages into ${path.relative(root, dist)}/`);
 }
 
 main().catch((err) => {

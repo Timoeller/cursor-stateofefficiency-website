@@ -34,14 +34,12 @@
     "menu": "Menü öffnen",
     "home": "State of Efficiency, zur Startseite",
     "mainNav": "Hauptnavigation",
-    "footerNav": "Fußzeile",
-    "langSwitch": "Zur englischen Version wechseln"
+    "footerNav": "Fußzeile"
   },
   "nav": {
     "product": "Produkt",
     "about": "Über uns",
     "contact": "Kontakt",
-    "switchLabel": "EN",
     "tagline": "Der effiziente Staat"
   },
   "home": {
@@ -339,7 +337,7 @@
       },
       {
         "h": "Cookies und Tracking",
-        "p": ["Diese Website verwendet keine Cookies und kein Tracking oder Webanalyse. Ihre gewählte Sprache (de oder en) wird ausschließlich lokal in Ihrem Browser gespeichert, damit wir Sie beim nächsten Besuch zur passenden Version leiten können. Diese Information wird nicht an uns übertragen."]
+        "p": ["Diese Website verwendet keine Cookies und kein Tracking oder Webanalyse."]
       },
       {
         "h": "Ihre Rechte",

@@ -122,8 +122,6 @@ button, input, textarea { font: inherit; color: inherit; }
 .nav-link:hover { color: #000; background: var(--soft); }
 .nav-link.is-current { color: #000; }
 .header-actions { margin-left: auto; display: flex; align-items: center; gap: 10px; }
-.lang-switch { text-decoration: none; font-family: var(--display); font-weight: 700; font-size: 0.82rem; letter-spacing: 0.04em; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 8px 12px; line-height: 1; }
-.lang-switch:hover { color: #000; border-color: #000; }
 .menu-btn { display: none; width: 40px; height: 40px; border: 1px solid var(--line); background: #fff; border-radius: 999px; cursor: pointer; position: relative; }
 .menu-btn span { position: absolute; left: 12px; right: 12px; height: 1.5px; background: #000; transition: transform .2s, top .2s; }
 .menu-btn span:first-child { top: 16px; }
