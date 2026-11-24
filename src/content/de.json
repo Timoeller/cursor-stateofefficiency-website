@@ -38,6 +38,7 @@
   },
   "nav": {
     "product": "Produkt",
+    "security": "Sicherheit",
     "about": "Über uns",
     "contact": "Kontakt",
     "tagline": "Der effiziente Staat"
@@ -113,36 +114,6 @@
         ],
         "approve": "Freigeben"
       }
-    },
-    "features": {
-      "eyebrow": "Die Plattform",
-      "title": "Eine Plattform für Ihre Prozesse.",
-      "items": [
-        {
-          "title": "Workflows im Dialog",
-          "text": "Prozesse entstehen im Gespräch mit SOE, nicht in Projektplänen und Lastenheften."
-        },
-        {
-          "title": "Eine Plattform für alle Prozesse",
-          "text": "Vom Antrag bis zum Bescheid: ein Ort, an dem Workflows gebaut, betrieben und verbessert werden."
-        },
-        {
-          "title": "Freigabe an Prüfpunkten",
-          "text": "Sie legen fest, wo ein Mensch entscheidet. Der Rest läuft von selbst."
-        },
-        {
-          "title": "Lückenlos nachvollziehbar",
-          "text": "Jeder Schritt, jede Quelle und jede Entscheidung ist protokolliert und einsehbar."
-        },
-        {
-          "title": "Anbindung an Ihre Systeme",
-          "text": "SOE arbeitet mit Ihren Fachverfahren und Ablagen. Den Umfang klären wir im Erstgespräch."
-        },
-        {
-          "title": "Das Wissen bleibt im Haus",
-          "text": "Korrekturen Ihres Teams fließen in die Regeln. Was heute in wenigen Köpfen steckt, ist danach dokumentiert."
-        }
-      ]
     },
     "security": {
       "id": "sicherheit",

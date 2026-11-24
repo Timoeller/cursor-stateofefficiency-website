@@ -24,6 +24,42 @@
     });
   }
 
+  /* nav: brand scrolls to the top, Produkt and Sicherheit to their sections */
+  var spyLinks = $$('[data-spy]');
+  var spySections = spyLinks.map(function (a) { return document.getElementById(a.getAttribute('data-spy')); });
+  var onHome = spySections.length > 0 && spySections.every(Boolean);
+  function closeMenu() {
+    if (nav && nav.classList.contains('is-open')) {
+      nav.classList.remove('is-open');
+      if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
+    }
+  }
+  if (onHome) {
+    var brand = $('[data-top]');
+    if (brand) {
+      brand.addEventListener('click', function (e) {
+        e.preventDefault();
+        closeMenu();
+        window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+        if (window.location.hash && window.history.replaceState) {
+          window.history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
+      });
+    }
+    spyLinks.forEach(function (a) { a.addEventListener('click', closeMenu); });
+    var spy = function () {
+      var line = window.innerHeight * 0.35;
+      var active = -1;
+      spySections.forEach(function (sec, i) {
+        if (sec.getBoundingClientRect().top <= line) active = i;
+      });
+      spyLinks.forEach(function (a, i) { a.classList.toggle('is-current', i === active); });
+    };
+    window.addEventListener('scroll', spy, { passive: true });
+    window.addEventListener('resize', spy);
+    spy();
+  }
+
   /* reveal on scroll */
   var reveals = $$('.reveal');
   if (reveals.length) {

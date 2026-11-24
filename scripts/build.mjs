@@ -227,7 +227,6 @@ async function main() {
 
       const t = mapStrings(content[lang], resolve);
 
-      t.home.features.items.forEach((item, i) => { item.num = String(i + 1).padStart(2, '0'); });
       for (const person of t.about.people) person.linkedinUrl = site.linkedin[person.key];
       for (const step of t.home.soe.mock.steps) {
         step.initial = step.done <= 2 ? 'is-done' : step.active === 2 ? 'is-active' : '';
