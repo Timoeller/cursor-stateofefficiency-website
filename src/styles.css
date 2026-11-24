@@ -224,9 +224,6 @@ button, input, textarea { font: inherit; color: inherit; }
 .secret i { font-style: normal; letter-spacing: 0.05em; color: #000; }
 .data-block { border-top: 1px solid var(--line); padding-top: clamp(28px, 4vw, 48px); max-width: 46rem; display: grid; gap: 12px; }
 
-.team-card { background: var(--soft); border-radius: var(--radius); padding: clamp(32px, 6vw, 80px); }
-.team-card .h2 { margin-bottom: 20px; max-width: 40rem; }
-
 /* faq */
 .faq-wrap { display: grid; grid-template-columns: 0.8fr 1.4fr; gap: clamp(28px, 6vw, 96px); }
 .faq details { border-top: 1px solid var(--line); }
