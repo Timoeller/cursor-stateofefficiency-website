@@ -131,16 +131,7 @@ button, input, textarea { font: inherit; color: inherit; }
 
 /* hero */
 .hero { padding: clamp(56px, 9vw, 120px) 0 clamp(40px, 6vw, 80px); }
-.entry { display: inline-block; border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 16px 20px; margin-bottom: 28px; background: #fff; max-width: 100%; }
-.entry-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
-.entry-word { font-family: var(--display); font-weight: 800; font-size: 1.4rem; letter-spacing: -0.03em; }
-.entry-pron { color: var(--muted); font-size: 0.95rem; }
-.entry-label { color: var(--muted-2); font-style: italic; font-size: 0.9rem; }
-.entry-senses { display: grid; gap: 4px; font-size: 0.97rem; }
-.entry-senses li { padding: 3px 8px; margin-inline: -8px; border-radius: 8px; transition: background .5s; }
-.sense-n { color: var(--muted-2); margin-right: 4px; }
-.sense-def { color: var(--muted); }
-.sense-def::before { content: "· "; }
+.hero .eyebrow { margin-bottom: 22px; }
 .sense { transition: background .5s, box-shadow .5s; }
 .sense.hl { background: var(--hl); }
 .hero-lead .sense { border-radius: 6px; padding: 0 4px; margin-inline: -4px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }

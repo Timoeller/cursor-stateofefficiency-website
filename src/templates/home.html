@@ -1,17 +1,6 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="container">
         <p class="eyebrow">{{t.home.hero.eyebrow}}</p>
-        <div class="entry" aria-label="{{t.home.hero.entry.word}}">
-          <div class="entry-head">
-            <span class="entry-word">{{t.home.hero.entry.word}}</span>
-            <span class="entry-pron">{{t.home.hero.entry.pron}}</span>
-            <span class="entry-label">{{t.home.hero.entry.label}}</span>
-          </div>
-          <ol class="entry-senses">
-            {{#each t.home.hero.entry.senses}}<li class="sense" data-sense="{{id}}"><span class="sense-n">{{n}}</span> <strong>{{word}}</strong> <span class="sense-def">{{def}}</span></li>
-            {{/each}}
-          </ol>
-        </div>
         <h1 id="hero-title" class="display">{{t.home.hero.title}}</h1>
         <p class="hero-lead">{{t.home.hero.lead}}</p>
         <p class="hero-sub">{{t.home.hero.sub}}</p>
