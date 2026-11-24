@@ -71,7 +71,7 @@
           "n": "02",
           "kicker": "State als Zustand",
           "title": "Ein Zustand, in dem es läuft.",
-          "text": "Effizienz ist kein Projekt mit Enddatum, sondern ein Zustand: keine Rückstaus, keine Medienbrüche, jeder Schritt nachvollziehbar."
+          "text": "Effizienz ist kein Projekt mit Enddatum, sondern ein Zustand: keine Rückstaus, keine Wartezeiten, jeder Schritt nachvollziehbar."
         }
       ],
       "closing": "Wir bringen den Staat in einen Zustand der Effizienz."
@@ -80,7 +80,7 @@
       "id": "produkt",
       "eyebrow": "Das Produkt",
       "title": "SOE lernt wie eine neue Kollegin.",
-      "text": "SOE, die Initialen von State of Efficiency, ist der Agent auf unserer Plattform. Sie erklären ihm Ihren Prozess im Gespräch, so wie Sie ihn neuen Mitarbeitenden zeigen würden. SOE baut daraus den Workflow.",
+      "text": "SOE ist der Agent auf unserer Plattform. Sie erklären Prozessabläufe im Gespräch, so wie Sie neue Mitarbeitenden anleiten würden. SOE baut daraus den Workflow.",
       "steps": [
         {
           "n": "01 · Erklären",
