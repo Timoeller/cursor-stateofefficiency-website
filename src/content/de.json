@@ -10,7 +10,7 @@
   "seo": {
     "home": {
       "title": "State of Efficiency | Der effiziente Staat",
-      "description": "Agentische KI, die bürokratische Prozesse automatisiert. SOE lernen Sie an wie neue Mitarbeitende. Mit Fehlerkontrolle, abgesichertem Arbeitsplatz und Verarbeitung auf Servern in Deutschland."
+      "description": "Agentische KI, die bürokratische Prozesse automatisiert. SoE lernen Sie an wie neue Mitarbeitende. Mit Fehlerkontrolle, abgesichertem Arbeitsplatz und Verarbeitung auf Servern in Deutschland."
     },
     "about": {
       "title": "Über uns | State of Efficiency",
@@ -65,7 +65,7 @@
           "n": "01",
           "kicker": "State als Staat",
           "title": "Ein Staat, der funktioniert.",
-          "text": "Behörden und Verbände tragen enorme Verantwortung und enorme Aktenberge. SOE übernimmt die Routine, damit Fachleute Zeit für Menschen und für die schwierigen Fälle haben."
+          "text": "Behörden und Verbände tragen enorme Verantwortung und enorme Aktenberge. SoE übernimmt die Routine, damit Fachleute Zeit für Menschen und für die schwierigen Fälle haben."
         },
         {
           "n": "02",
@@ -78,23 +78,23 @@
     "soe": {
       "id": "produkt",
       "eyebrow": "Das Produkt",
-      "title": "SOE lernt wie eine neue Kollegin.",
-      "text": "SOE ist der Agent auf unserer Plattform. Sie erklären Prozessabläufe im Gespräch, so wie Sie neue Mitarbeitenden anleiten würden. SOE baut daraus den Workflow.",
+      "title": "SoE lernt wie eine neue Kollegin.",
+      "text": "SoE ist der Agent auf unserer Plattform. Sie erklären Prozessabläufe im Gespräch, so wie Sie neue Mitarbeitenden anleiten würden. SoE baut daraus den Workflow.",
       "steps": [
         {
           "n": "01 · Erklären",
           "title": "Im Gespräch statt im Formular",
-          "text": "Sie beschreiben den Prozess in Ihren Worten. SOE fragt nach, wo etwas unklar ist, und lässt sich Beispiele zeigen."
+          "text": "Sie beschreiben den Prozess in Ihren Worten. SoE fragt nach, wo etwas unklar ist, und lässt sich Beispiele zeigen."
         },
         {
           "n": "02 · Prüfen",
           "title": "Der Workflow entsteht Schritt für Schritt",
-          "text": "SOE legt jeden Schritt sichtbar an. Sie korrigieren direkt, und jede Korrektur wird Teil der Regeln."
+          "text": "SoE legt jeden Schritt sichtbar an. Sie korrigieren direkt, und jede Korrektur wird Teil der Regeln."
         },
         {
           "n": "03 · Betreiben",
           "title": "Der Agent arbeitet, Ihr Team entscheidet",
-          "text": "SOE bearbeitet die Fälle. An den Prüfpunkten, die Sie festlegen, gibt Ihr Team frei."
+          "text": "SoE bearbeitet die Fälle. An den Prüfpunkten, die Sie festlegen, gibt Ihr Team frei."
         }
       ],
       "mock": {
@@ -102,7 +102,7 @@
         "states": ["Zustand: bereit", "Zustand: läuft", "Zustand: Freigabe erforderlich"],
         "chat": [
           { "who": "Sie", "me": true, "text": "Bei Förderanträgen prüfst du zuerst, ob alle Unterlagen vollständig sind. Danach die Fristen." },
-          { "who": "SOE", "me": false, "text": "Verstanden. Was soll passieren, wenn ein Nachweis fehlt?" },
+          { "who": "SoE", "me": false, "text": "Verstanden. Was soll passieren, wenn ein Nachweis fehlt?" },
           { "who": "Sie", "me": true, "text": "Dann fragst du schriftlich nach und setzt eine Frist von 14 Tagen." }
         ],
         "steps": [
@@ -177,7 +177,7 @@
         },
         {
           "q": "Wer trifft am Ende die Entscheidung?",
-          "a": "Ihr Team. Sie legen fest, an welchen Stellen ein Mensch prüft und freigibt. SOE bereitet vor und dokumentiert."
+          "a": "Ihr Team. Sie legen fest, an welchen Stellen ein Mensch prüft und freigibt. SoE bereitet vor und dokumentiert."
         },
         {
           "q": "Wo werden unsere Daten verarbeitet?",
@@ -188,8 +188,8 @@
           "a": "Erforderliche Sicherheits- und DSGVO-Nachweise und Zertifizierungen stellen wir auf Anfrage gerne bereit. <a href=\"[[href:contact?topic=security]]\">Nachweise anfragen</a>."
         },
         {
-          "q": "Lässt sich SOE an unsere Systeme anbinden?",
-          "a": "SOE wird an Ihre bestehenden Fachverfahren und Ablagen angebunden. Welche Systeme das sind und wie, klären wir gemeinsam im Erstgespräch."
+          "q": "Lässt sich SoE an unsere Systeme anbinden?",
+          "a": "SoE wird an Ihre bestehenden Fachverfahren und Ablagen angebunden. Welche Systeme das sind und wie, klären wir gemeinsam im Erstgespräch."
         },
         {
           "q": "Wie starten wir?",
