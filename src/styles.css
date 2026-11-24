@@ -130,7 +130,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .menu-btn[aria-expanded="true"] span:last-child { top: 19px; transform: rotate(-45deg); }
 
 /* hero */
-.hero { padding: clamp(56px, 9vw, 120px) 0 clamp(40px, 6vw, 80px); }
+.hero { padding: clamp(40px, 6vw, 80px) 0 0; }
 .hero .eyebrow { margin-bottom: 22px; }
 .sense { transition: background .5s, box-shadow .5s; }
 .sense.hl { background: var(--hl); }
@@ -138,14 +138,16 @@ button, input, textarea { font: inherit; color: inherit; }
 .hero .display { margin-bottom: 28px; }
 .hero-lead { font-family: var(--display); font-weight: 600; font-size: clamp(1.4rem, 3vw, 2.2rem); letter-spacing: -0.03em; line-height: 1.2; max-width: 40rem; }
 .hero-sub { margin-top: 18px; color: var(--muted); font-size: clamp(1.05rem, 1.5vw, 1.2rem); max-width: 36rem; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
-.chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 44px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
 .chip { font-size: 0.88rem; font-weight: 500; color: var(--ink-soft); border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; display: inline-flex; align-items: center; gap: 8px; }
 .chip::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--ok); }
 
 /* sections */
 .section { padding: clamp(64px, 9vw, 120px) 0; }
 .section--tight { padding-top: 0; }
+.hero + .section { padding-top: clamp(24px, 2.5vw, 36px); }
+.hero + .section .meanings { margin-top: clamp(16px, 2vw, 24px); }
 .section--soft { background: var(--soft); }
 .section .h2 { max-width: 46rem; }
 .soe-intro { max-width: 46rem; margin-bottom: clamp(36px, 5vw, 64px); }
